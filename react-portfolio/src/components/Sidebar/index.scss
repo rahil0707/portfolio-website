@@ -14,7 +14,8 @@
     img {
       display: block;
       margin: 8px auto;
-      width: 24px;
+      margin-left: 4px;
+      width: 50px;
       height: auto;
 
       &.sub-logo {
@@ -87,12 +88,14 @@
     a.contact-link {
       &:after {
         content: 'CONTACT';
+        font-size: 7px;
       }
     }
 
     a.portfolio-link {
       &:after {
         content: 'PORTFOLIO';
+        font-size: 6px;
       }
     }
 
@@ -171,7 +174,7 @@
         opacity: 1;
         position: initial;
         width: auto;
-        margin-left: 10PX;
+        margin-left: 10px;
       }
 
       a svg {
