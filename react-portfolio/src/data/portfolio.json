@@ -1,0 +1,47 @@
+{
+    "portfolio": [
+        {
+            "cover": "/portfolio/Breezy.jpeg", 
+            "title": "Breezy", 
+            "description": "Swift, SwiftUI, Firebase", 
+            "url": "https://github.com/rahil0707/Breezy"
+        },
+        {
+            "cover": "/portfolio/FPL.png", 
+            "title": "EPL Web App", 
+            "description": "Java, PostgreSQL, Spring Boot", 
+            "url": "https://github.com/rahil0707/EPL-web-app"
+        },
+
+        {
+            "cover": "/portfolio/PLPredictor.png", 
+            "title": "EPL Match Predictor", 
+            "description": "Python, Sci-kit Learn, Pandas", 
+            "url": "https://github.com/rahil0707/EPL_Match_Winner_Predictor"
+        },
+        {
+            "cover": "/portfolio/Stocks.jpg", 
+            "title": "Stocks App", 
+            "description": "Python, Django, React, PostgreSQL", 
+            "url": "https://github.com/rahil0707/StocksApp"
+        },
+        {
+            "cover": "/portfolio/Campus.png", 
+            "title": "Campus Discovery App", 
+            "description": "Java, NodeJS, MongoDB", 
+            "url": "https://github.com/rahil0707/CampusDiscoveryApp/tree/main"
+        },
+        {
+            "cover": "/portfolio/PhotoGalleryApp.png", 
+            "title": "Photo Gallery Application", 
+            "description": "HTML/CSS, Python, AWS", 
+            "url": "https://github.com/rahil0707/Photo-Gallery-Application"
+        }, 
+        {
+            "cover": "/portfolio/WHITEBOARD-HOMEPAGE.png", 
+            "title": "Whiteboard Application", 
+            "description": "HTML/CSS, Python, AWS", 
+            "url": "https://github.com/rahil0707/ECE4150-Final-Project"
+        }
+    ]
+}

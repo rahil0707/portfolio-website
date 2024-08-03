@@ -1,0 +1,39 @@
+.flat-button-1 { 
+    color: #ffd700; 
+    font-size: 15px; 
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-decoration: none;
+    padding: 10px 70px; 
+    border: 2px solid #ffd700; 
+    margin-top: 25px; 
+    float: left; 
+    margin-left: auto;
+    animation: fadeIn 1s 1.8s backwards; 
+    white-space: nowrap; 
+
+    &:hover { 
+        background: #ffd700; 
+        color: #333;
+    }
+}
+
+.flat-button-2 { 
+    color: #ffd700; 
+    font-size: 15px; 
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-decoration: none;
+    padding: 10px 70px; 
+    border: 2px solid #ffd700; 
+    margin-top: 70px; 
+    float: left; 
+    margin-left: -445px;
+    animation: fadeIn 1s 1.8s backwards; 
+    white-space: nowrap; 
+
+    &:hover { 
+        background: #ffd700; 
+        color: #333;
+    }
+}

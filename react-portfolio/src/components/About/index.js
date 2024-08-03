@@ -1,77 +1,66 @@
-import { useEffect, useState } from 'react'
-import {
-  faAngular,
-  faPython,
-  faGithub,
-  faJava,
-  faJsSquare,
-  faReact,
-} from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import './index.scss'
+import "./index.scss"; 
+import AnimatedLetters from "../AnimatedLetters"
+import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPython, faJava, faHtml5, faJs, faSwift, faCss3 } from "@fortawesome/free-brands-svg-icons";
+import Loader from "react-loaders";
+import LanguageList from "./LanguageList";
 
 const About = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+    
+    const [letterClass, setLetterClass] = useState('text-animate');
 
-  useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+    useEffect(() => {
+        const timerId = setTimeout(() => {
+          setLetterClass('text-animate-hover');
+        }, 3000);
+      
+        return () => {
+          clearTimeout(timerId);
+        };
+      }, []);
 
-  return (
-    <>
-      <div className="container about-page">
-        <div className="text-zone">
-          <h1>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-              idx={15}
-            />
-          </h1>
-          <p>
-          Passionate and driven Computer Engineering student with an unwavering commitment to excellence. Eager to contribute my technical skills and problem-solving abilities to the world of software development and engineering. With a track record of consistently achieving top grades and a deep-rooted love for tackling challenges, I am dedicated to becoming one of the foremost computer engineers and software developers in the field.
-          </p>
-          <p align="LEFT">
-          My ultimate goal is to make a positive impact on people's lives and enhance the world around me. I thrive on the satisfaction of helping others through innovation and service, aiming to drive progress and create meaningful change. An avid listener and enthusiastic learner, I constantly seek opportunities to broaden my knowledge and skill set to continuously improve my work.
-          </p>
-          <p>
-          I'm not just a passive learner; I'm an active participant in class discussions, often being the first to engage and provide insightful answers. Leading from the front comes naturally to me, as I'm driven to motivate and inspire others to give their best. I am relentless in my pursuit of personal and professional growth, always striving to be the best version of myself.
-          </p>
-          <p>
-          If you're seeking a dedicated team member who combines technical expertise with a genuine desire to make a difference, I look forward to connecting with you and exploring ways we can collaborate to achieve remarkable outcomes.
-          </p>
-        </div>
-
-        <div className="stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+    return (
+        <>
+            <div className = "container about-page"> 
+                <div className = "text-zone"> 
+                    <h1>
+                        <AnimatedLetters letterClass={letterClass}  strArray = {"About me".split("")} idx={15}/>
+                    </h1>
+                    <p>
+                    I am a passionate and driven Master's Computer Engineering student with an unwavering commitment to excellence. I am eager to contribute my technical skills and problem-solving abilities to the world of software development and engineering. With a track record of consistently achieving top grades and a deep-rooted love for tackling challenges, I am dedicated to becoming one of the foremost software engineers in the field.
+                    <br/>
+                    <LanguageList />
+                    <Link to="/about/tech" className="flat-button-3">FRAMEWORKS</Link>
+                    <Link to="/about/dev" className="flat-button-4">TOOLS</Link>
+                    </p>
+                </div>
+                <div className = "stage-cube-cont">
+                    <div className = "cubespinner"> 
+                        <div className = "face1">
+                            <FontAwesomeIcon icon={faJs}/>
+                        </div>
+                        <div className = "face2">
+                            <FontAwesomeIcon icon={faHtml5} color="#F06529"/>
+                        </div>
+                        <div className = "face3">
+                            <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
+                        </div>
+                        <div className = "face4">
+                            <FontAwesomeIcon icon={faSwift} color="#5ED4F4"/>
+                        </div>
+                        <div className = "face5">
+                            <FontAwesomeIcon icon={faPython} color="#ffd700"/>
+                        </div>
+                        <div className = "face6">
+                            <FontAwesomeIcon icon={faJava} color="#EC4D28"/>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="face2">
-              <FontAwesomeIcon icon={faPython} color="#F06529" />
-            </div>
-            <div className="face3">
-              <FontAwesomeIcon icon={faJava} color="#28A4D9" />
-            </div>
-            <div className="face4">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            </div>
-            <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-            </div>
-            <div className="face6">
-              <FontAwesomeIcon icon={faGithub} color="#EC4D28" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <Loader type="pacman" />
-    </>
-  )
+            <Loader type="pacman" />
+        </>
+    )
 }
-
 export default About

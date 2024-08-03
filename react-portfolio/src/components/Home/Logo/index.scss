@@ -15,6 +15,19 @@
     opacity: 1;
   }
 
+  svg {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    transform: rotateZ(30deg) !important;
+
+    .svg-path {
+      stroke-dasharray: 500;
+      stroke-dashoffset: 1000;
+      animation: drawSVG 3s linear infinite; 
+    }
+  }
+
   .solid-logo {
     position: absolute;
     top: auto;
@@ -31,6 +44,11 @@
       opacity: 1;
     }
   }
+}
+
+.svg-container {
+  stroke: #ffd700;
+  stroke-width: 10;
 }
 
 @keyframes bounce {
@@ -89,3 +107,5 @@
     transform: translateY(0);
   }
 }
+
+
