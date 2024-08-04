@@ -1,10 +1,6 @@
-# Erik Cupsa's Coding Portfolio
+# Mohammed Rahil Hussain's Coding Portfolio
 
-Welcome to my coding portfolio! This web application is built using ReactJs with Sass styling, showcasing my skills, projects, and achievements in the field of web development. You can check it out [here!](https://erikc-portfolio.vercel.app/)
-
-<img width="1160" alt="Screenshot 2024-06-15 at 1 20 54 AM" src="https://github.com/Erik-Cupsa/PortfolioWebsite/assets/86483911/3158d670-8cea-428a-8308-32c6b50f4de0">
-
-
+Welcome to my coding portfolio! This web application is built using ReactJs with Sass styling, showcasing my skills, projects, and achievements in the field of web development. You can check it out [here!](https://rahilhussain-portfolio.vercel.app/)
 
 
 ## Table of Contents
@@ -19,25 +15,29 @@ Welcome to my coding portfolio! This web application is built using ReactJs with
 
 ## Introduction
 
-This portfolio is a personalized space for me to highlight my expertise, share my projects, and provide information about my coding journey. The application offers an interactive and user-friendly experience for visitors to explore my work and get in touch with me.
+This is my portfolio where I share a bit about myself, highlight my skills and proficiences, projects, and provide information about my past work experiences. The application boaats a responsive and user-friendly UI for visitors to explore who I am and what I do and get in touch with me.
 
 ## Features
 
-- **Responsive Design:** The portfolio is designed to be accessible and visually appealing across various devices and screen sizes.
+- **Interactive Design:** The portfolio is designed to be highly accessible and aesthetic across web browsers and phone screens.
 
-- **Project Showcase:** I can display his coding projects with detailed information, including technologies used, project descriptions, and live demo links.
+- **Projects:** The website includes my work experiences that I have done throughout the years.
 
-- **Skills Section:** A dedicated section to showcase my skills and proficiency in different programming languages, frameworks, and tools.
+- **Projects:** The website showcases some of the coding projects I have done over the years at university or just personally, with detailed info, technologies used, project descriptions, and GitHub links.
 
-- **Contact Form:** An interactive contact form allowing visitors to reach out to me directly.
+- **Skills Section:** It also contains a dedicated section to showcase my skills and proficiencies in different programming languages, frameworks, and tools.
+
+- **Contact Form:** There is also an interactive contact form allowing people who visit my site to reach out to me directly.
+
+- **Social Links:** My social links are also included at various locations on site.
 
 ## Installation
 
 To run this portfolio locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-portfolio.git](https://github.com/Erik-Cupsa/PortfolioWebsite.git`
+1. Clone the repository: `git clone https://github.com/rahil0707/portfolio-website.git`
 
-2. Navigate to the project directory: `cd PortfolioWebsite`
+2. Navigate to the react-portfolio directory: `cd react-portfolio`
 
 3. Install dependencies: `npm install`
 
@@ -48,7 +48,8 @@ To run this portfolio locally, follow these steps:
 ## Technologies Used
 
 - ReactJs: A JavaScript library for building user interfaces.
-- Sass: A CSS preprocessor that enhances the styling capabilities of the application.
+- EmailJS: A service that allows developers to send emails directly from their JavaScript applications.
+- Sass: (Syntactically Awesome Style Sheets) A CSS preprocessor that enhances the styling capabilities of the application.
 
 ## Project Structure
 
@@ -58,14 +59,10 @@ The project structure follows a standard React application layout. Key directori
 - `src/styles`: Sass files for styling the application.
 - `public`: Static assets and the `index.html` file.
 
-## Contributing
-
-If you'd like to contribute to this project, please follow the [Contributing Guidelines](CONTRIBUTING.md).
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Thank you for checking out my Coding Portfolio! If you have any questions or feedback, feel free to reach out.
+Thank you for checking out my Personal Portfolio! If you have any questions or feedback, feel free to reach out.
