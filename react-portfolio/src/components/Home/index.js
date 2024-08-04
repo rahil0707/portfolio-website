@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
 import LogoE from '../../assets/images/E.png';
+import resume from '../../assets/Files/Rahil_Internships_Resume.pdf';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import Logo from './Logo';
@@ -38,6 +39,7 @@ const Home = () => {
                 </h1>
                 <h2>M.S. Computer Engineering, GaTech / Software Engineer</h2>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                <a href={resume} className="flat-button flat-button-resume" download>RESUME DOWNLOAD</a>
             </div>
             <Logo className="Home"/>
         </div>
