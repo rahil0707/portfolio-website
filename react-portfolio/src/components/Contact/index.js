@@ -26,10 +26,10 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                process.env.REACT_APP_EMAILJS_SERVICE_ID,
-                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                'service_foe4wak',
+                'template_rjxejph',
                 refForm.current,
-                process.env.REACT_APP_EMAILJS_USER_ID
+                '2z6QmHwRnqopuPEdJ'
             )
             .then(
                 () => {
@@ -54,9 +54,9 @@ const Contact = () => {
                                 </h1>
                                 <p>
                                     <br/>
-                                    Thank you for your interest in getting in touch! 
+                                    Thank you for visiting my portfolio and for your interest in reaching out.
                                     <br/>
-                                    <br/>I value open communication and welcome any inquiries, feedback, or collaboration opportunities. Please don't hesitate to get in touch with me by filling out the contact form.
+                                    <br/>Whether you have a question, a project idea or just want to say hello, feel free to reach out! I am excited to hear about what you have in mind and welcome any input, feedback, or collaboration opportunities. Please don't hesitate to get in touch with me by filling out the contact form.
                                     <br/>
                                     <br/>
                                     <a target = "_blank" rel = "noreferrer" href = "https://www.linkedin.com/in/mrahilh/">
@@ -68,14 +68,14 @@ const Contact = () => {
                                 </p>
                             </td>
                             <td className="right-side">
-                                <div className="contact-form" onSubmit={sendEmail}>
-                                    <form ref={refForm}>
+                                <div className="contact-form">
+                                    <form ref={refForm} onSubmit={sendEmail}>
                                         <ul>
                                             <li className = "half">
-                                                <input type="text" name="name" placeholder="Name" required />
+                                                <input type="text" name="from_name" placeholder="Name" required />
                                             </li>
                                             <li className="half">
-                                                <input type="email" name="email" placeholder = "Email" required />
+                                                <input type="email" name="email_id" placeholder = "Email" required />
                                             </li>
                                             <li>
                                                 <input placeholder = "Subject" type="text" name="subject" required/>
