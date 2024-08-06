@@ -21,7 +21,7 @@ This is my portfolio where I share a bit about myself, highlight my skills and p
 
 - **Interactive Design:** The portfolio is designed to be highly accessible and aesthetic across web browsers and phone screens.
 
-- **Projects:** The website includes my work experiences that I have done throughout the years.
+- **Work Experience:** The website includes my work experiences that I have done throughout the years.
 
 - **Projects:** The website showcases some of the coding projects I have done over the years at university or just personally, with detailed info, technologies used, project descriptions, and GitHub links.
 
